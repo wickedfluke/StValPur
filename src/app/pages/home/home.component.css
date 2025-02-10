@@ -1,0 +1,94 @@
+body {
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    font-family: 'Arial', sans-serif;
+
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    animation: slideInFromTop 1s ease-out;
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+        /* Partiamo fuori dallo schermo sopra */
+        opacity: 0;
+        /* Partiamo trasparenti */
+    }
+
+    100% {
+        transform: translateY(0);
+        /* Arriviamo nella posizione finale */
+        opacity: 1;
+        /* Diventiamo visibili */
+    }
+}
+
+h1 {
+    color: #ff3366;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.gif {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    z-index: 2;
+}
+
+button {
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-success {
+    background-color: #4ca23f;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #60d14f;
+}
+
+.btn-danger {
+    background-color: #a300a3;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #800080;
+}
+
+.message {
+    color: #ff3366;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 15px 0;
+    z-index: 2;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Animazione per far apparire il messaggio con un effetto morbido */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
